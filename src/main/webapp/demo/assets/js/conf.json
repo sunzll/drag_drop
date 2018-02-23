@@ -1,0 +1,15 @@
+[
+  {
+    "src": "h1",
+    "tag": "div"
+  },
+  {
+    "src": "a",
+    "tag": "div,pre"
+  },
+  {
+    "src": "p",
+    "tag": "div,pre,form"
+  }
+
+]

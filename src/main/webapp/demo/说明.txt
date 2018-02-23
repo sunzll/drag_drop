@@ -1,0 +1,11 @@
+conf.json
+  模拟服务器返回配置数据
+demointerface1.html
+  可拖动的组件列表、放置元素的容器框架
+client1.html
+  放置元素的页面
+功能实现：
+  1、ajax请求配置数据-->添加dragstart监听事件
+          -->匹配src-tag-->添加tag对应的事件-->drop后删除添加的事件
+  2、src--取自组件自定义属性data-insert-type
+     tag--使用：$(clientFrameWindow.document).find(tag)

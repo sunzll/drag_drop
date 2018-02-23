@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jQuery/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var div1 = $("#div1");
+            console.log(div1);
+        });
+    </script>
+    <style>
+        .dd {
+            width: 198px;
+            height: 66px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="div1" class="dd">
+
+</div>
+<div id="div2" class="dd" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+</div>
+<img id="drag1" src="../img/eg_dragdrop_w3school.gif" ondragstart="drag(event)"/>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="description" content="Building a cross frame drag-drop interface using HTML5 for precise insertions">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="./assets/css/demointerface.css" rel="stylesheet">
+</head>
+<body>
+<div id="dragitemslist">
+    <h4>Element List</h4>
+    <div>
+        <ul id="dragitemslistcontainer">
+            <li draggable="true" data-insert-html="<h1>this is h1</h1>" data-insert-type="h1"><p>h</p></li>
+            <li draggable="true" data-insert-html="<p>this is p</p>" data-insert-type="p"><p>p</p></li>
+            <li draggable="true" data-insert-html="<a href='http://www.baidu.com' target='_blank'>go baibu<a>" data-insert-type="a"><p>a</p></li>
+        </ul>
+    </div>
+</div>
+
+<div id="clientframe-container">
+    <iframe id="clientframe" src="./client1.html" frameborder="0"></iframe>
+</div>
+</body>
+<script src="../jQuery/jquery.min.js"></script>
+<script src="./assets/js/dnd.js"></script>
+</html>
